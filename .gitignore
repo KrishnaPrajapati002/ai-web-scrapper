@@ -1,0 +1,6 @@
+.env/
+venv_captcha/
+__pycache__/
+*.log
+chromedriver.exe
+.env.local

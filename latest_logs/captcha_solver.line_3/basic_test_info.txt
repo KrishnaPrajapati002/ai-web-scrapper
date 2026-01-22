@@ -1,0 +1,31 @@
+sb_cdp.py:3:SB
+--------------------------------------------------------------------
+Last Page: https://seleniumbase.io/apps/turnstile
+ Duration: 10.16s
+  Browser: Chrome 143.0.7499.193
+   Driver: chromedriver 143.0.7499.192
+Timestamp: 1769012691  (Unix Timestamp)
+     Date: Wednesday, 21 January 2026
+     Time: 9:54:51 PM  (India Standard Time, UTC+05:30)
+--------------------------------------------------------------------
+Traceback:
+  Traceback (most recent call last):
+  File "E:\projects\selenium\.env\Lib\site-packages\seleniumbase\core\sb_cdp.py", line 2862, in assert_element_visible
+    self.select(selector, timeout=timeout)
+  File "E:\projects\selenium\.env\Lib\site-packages\seleniumbase\core\sb_cdp.py", line 363, in select
+    raise Exception(message)
+Exception: 
+ Element {img#captcha-succes} was not found after 3 seconds!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\projects\selenium\captcha_solver.py", line 7, in <module>
+    sb.assert_element("img#captcha-succes",timeout = 3)
+  File "E:\projects\selenium\.env\Lib\site-packages\seleniumbase\fixtures\base_case.py", line 10150, in assert_element
+    self.cdp.assert_element(selector, timeout=timeout)
+  File "E:\projects\selenium\.env\Lib\site-packages\seleniumbase\core\sb_cdp.py", line 2854, in assert_element
+    self.assert_element_visible(selector, timeout=timeout)
+  File "E:\projects\selenium\.env\Lib\site-packages\seleniumbase\core\sb_cdp.py", line 2864, in assert_element_visible
+    raise Exception("Element {%s} was not found!" % selector)
+Exception: Element {img#captcha-succes} was not found!
